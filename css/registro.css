@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+body{
+    background-image: url(../img/informacion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header-logo{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding-top: 10%;
+    font-size: 30px;
+}
+.formulario{
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: #AFA798;
+    border-radius: 10px ;
+}
+.entradaFormulario label{
+    font-size: 19px;
+    margin: 15px 0;
+    text-align: center;
+    color: white;
+}
+.entradaFormulario input{
+    font-size: 16px;
+    width: 95%;
+    padding: 15px 5px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    align-items: center;
+    margin: auto;
+}
+.term .check{
+    display: inline;
+}
+#footer{
+    background-color: #AFA798;
+    position: fixed;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#footer a{
+    text-decoration: none;
+    color: #1B1C22;
+    margin-bottom: 0;
+}
+.creditos a{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.soporte{
+    text-align: center;
+    margin-top: -100px;
+}
+
+.social {
+    text-align: right;
+    margin-top: -70px;
+}
+
+.social a{
+    margin-right: 18px;
+}
+.social p{
+    margin-right: -10px;
+    align-items: center;
+}
+.social h3{
+    margin-left: 10px;
+    display: inline;
+    text-align: center;
+}
+
+.copyright{
+    margin-top: 2rem;
+    text-align: center;
+}
