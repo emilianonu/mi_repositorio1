@@ -90,6 +90,7 @@ main{
     margin-top: 170px;
     position: relative;
     flex-wrap: wrap;
+    border-color: #1B1C22 solid;
 }
 .home-text{
     display: flex;
@@ -99,13 +100,14 @@ main{
 .home-contenido__img{
     width: 45%;
     border-radius: 20px;
-    padding-top: -60px;
+    padding: -60px 60px 0 0;
 
 }
 .home-text .home-text__h1{
     width: 600px;
     line-height: 2rem;
     color: #1B1C22;
+    padding: 2rem 2rem 0 0;
 }
 .home-text__p{
     color: #1B1C22;
