@@ -5,18 +5,18 @@
     --top_navbar: 3rem;
 
     /* color */
-    --primary: #F3EDE9;
+    --primario: #F3EDE9;
     --highlight: #AFA798;
-    --font_primary: #1B1C22;
+    --font_primario: #1B1C22;
     --navbar_menu: #938071;
     --promo: #FAFAFA;
 
     /* fuentes */
     --fonts_family: 'Open Sans', sans-serif;
-    --fonts_default: 1rem;
+    --fonts_defecto: 1rem;
     --fonts_hero: 2.25rem;
-    --fonts_title: 2.125rem;
-    --fonts_subtitle: 1.625rem;
+    --fonts_titulo: 2.125rem;
+    --fonts_subtitulo: 1.625rem;
     --fonts_component: 1.125rem;
     --fonts_footer: 1.25rem;
     --fonts_copyright: 0.875rem;
@@ -44,7 +44,7 @@ nav{
     margin-left: 3rem;
 }
 .nav-item{
-    font-size: var(--fonts_default);
+    font-size: var(--fonts_defecto);
     font-weight: 600;
 }
 .nav-item a{
@@ -86,7 +86,7 @@ nav{
     height: 43rem;
     width: 33rem;
     z-index: -3;
-    background-color: var(--primary);
+    background-color: var(--primario);
     right: 0;
     top: 0;
     position: absolute;
@@ -106,21 +106,21 @@ nav{
     font-size: var(--fonts_hero);
     line-height: 3rem;
     font-weight: 700;
-    color: var(--font_primary);
+    color: var(--font_primario);
 }
 .textHero span{
     color: var(--highlight);
 }
 .textHero p{
-    color: var(--font_primary);
-    font-size: var(--fonts_default);
+    color: var(--font_primario);
+    font-size: var(--fonts_defecto);
     line-height: 1.5rem;
 }
 .btnGetStarted{
     border-radius: 5px;
     color: var(--highlight);
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primario);
+    border-color: var(--primario);
 }
 .btnGetStarted:hover{
     background-color: var(--highlight);
@@ -153,14 +153,14 @@ nav{
     margin-top: 5rem;
 }
 .textSeccion1 h1{
-    color: var(--font_primary);
-    font-size: var(--fonts_title);
+    color: var(--font_primario);
+    font-size: var(--fonts_titulo);
     line-height: 3rem;
     font-weight: 700;
 }
 .textSeccion1 p{
-    font-size: var(--fonts_default);
-    color: var(--font_primary);
+    font-size: var(--fonts_defecto);
+    color: var(--font_primario);
     line-height: 1.5rem;
 }
 .textSeccion1 span{
@@ -185,8 +185,8 @@ nav{
 }
 #blog h1{
     text-align: center;
-    color: var(--font_primary);
-    font-size: var(--fonts_title);
+    color: var(--font_primario);
+    font-size: var(--fonts_titulo);
     line-height: 3rem;
     font-weight: 700;
     margin-bottom: 3rem;
@@ -209,32 +209,32 @@ nav{
 .izquierda .Fecha{
     margin-left: 1rem;
     margin-bottom: 0.5rem;
-    color: var(--font_primary);
+    color: var(--font_primario);
 }
 .derecha .Fecha{
     margin-bottom: 0.5rem;
-    color: var(--font_primary);
+    color: var(--font_primario);
 }
 .izquierda  h2 {
     margin-left: 1rem;
     margin-bottom: 1rem;
-    color: var(--font_primary);
-    font-size: var(--fonts_subtitle);
+    color: var(--font_primario);
+    font-size: var(--fonts_subtitulo);
     font-weight: 700;
 }
 .derecha  h2 {
     margin-bottom: 1rem;
-    color: var(--font_primary);
-    font-size: var(--fonts_subtitle);
+    color: var(--font_primario);
+    font-size: var(--fonts_subtitulo);
     font-weight: 700;
 }
 .izquierda  .descripcion {
     margin-left: 1rem;
-    color: var(--font_primary);
+    color: var(--font_primario);
     max-width: 30rem;
 }
 .derecha  .descripcion {
-    color: var(--font_primary);
+    color: var(--font_primario);
     max-width: 35rem;
 }
 .izquierda a {
@@ -243,7 +243,7 @@ nav{
 .izquierda a, .derecha a{
     border-radius: 5px;
     color: var(--highlight);
-    background-color: var(--primary);
+    background-color: var(--primario);
     border-color: var(--primary);
 }
 .izquierda a:hover{
@@ -260,7 +260,7 @@ nav{
 /* download */
 #download{
     margin-top: 12rem;
-    background: var(--primary);
+    background: var(--primario);
     height: 37.25rem;
 }
 .component img{
@@ -273,8 +273,8 @@ nav{
     margin-top: 10rem;
 }
 .textDownload h1{
-    color: var(--font_primary);
-    font-size: var(--fonts_title);
+    color: var(--font_primario);
+    font-size: var(--fonts_titulo);
     line-height: 2.894rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -284,7 +284,7 @@ nav{
 }
 .textDownload p{
     font-size: var(--fonts_component);
-    color: var(--font_primary);
+    color: var(--font_primario);
 }
 .textDownload a{
     margin-left: -0.5rem;
@@ -300,7 +300,7 @@ nav{
 .imageDownload h1{
     display: inline-block;
     color: var(--promo);
-    font-size: var(--fonts_title);
+    font-size: var(--fonts_titulo);
     line-height: 3rem;
     font-weight: 800;
     margin-left: 7rem;
@@ -315,14 +315,14 @@ nav{
     margin-bottom: 1rem;
 }
 #footer h6{
-    color: var(--font_primary);
+    color: var(--font_primario);
     font-weight: 600;
     font-size: var(--fonts_footer);
     margin-bottom: 1rem;
 }
 #footer a{
     text-decoration: none;
-    color: var(--font_primary);
+    color: var(--font_primario);
     margin-bottom: -2rem;
 }
 .contacto a{
@@ -362,7 +362,7 @@ nav{
         margin-left: -3rem;
     }
     .navbar-light .navbar-toggler-icon{
-        background-image: url(./assets/icons/menu.svg) !important;
+        background-image: url(img/menu-line.svg) !important;
         outline: none;
     }
     .navbar-light button{
@@ -386,7 +386,7 @@ nav{
     }
     .textHero p{
         margin-top: 1rem;
-        font-size: calc(var(--fonts_default) - 0.1rem);
+        font-size: calc(var(--fonts_defecto) - 0.1rem);
         line-height: 1.3rem;
     }
     .hero{
@@ -423,12 +423,12 @@ nav{
     }
     .textSeccion1 p{
         margin-top: 1rem;
-        font-size: calc(var(--fonts_default) - 0.1rem);
+        font-size: calc(var(--fonts_defecto) - 0.1rem);
         line-height: 1.3rem;
     }
     .textSeccion1 li{
         margin-top: 0.5rem;
-        font-size: calc(var(--fonts_default) - 0.1rem);
+        font-size: calc(var(--fonts_defecto) - 0.1rem);
         line-height: 1.3rem;
     }
     .textSeccion1 ul{
@@ -449,7 +449,7 @@ nav{
         line-height: 1.8rem;
     }
     .left p, .right p{
-        font-size: calc(var(--fonts_default) - 0.2rem);
+        font-size: calc(var(--fonts_defecto) - 0.2rem);
         line-height: 1.3rem;
     }
     .left .description  {
@@ -483,7 +483,7 @@ nav{
         line-height: 2rem;
     }
     .textDownload p{
-        font-size: calc(var(--fonts_default) - 0.2rem);
+        font-size: calc(var(--fonts_defecto) - 0.2rem);
         line-height: 1.3rem;
     }
     .mockup{
@@ -506,7 +506,7 @@ nav{
         text-align: center;
     }
     .credit p, .support p, .about p{
-        font-size: calc(var(--fonts_default) - 0.2rem);
+        font-size: calc(var(--fonts_defecto) - 0.2rem);
         line-height: 1.3rem;
     }
     .support, .about{
