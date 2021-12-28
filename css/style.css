@@ -290,20 +290,13 @@ nav{
     margin-left: -0.5rem;
 }
 .imageDownload{
-    z-index: 2;
-    margin-top: 6.5rem;
+    z-index: 3;
+    margin-top: 3rem;
     padding: 0;
 }
 .mobile{
     display: inline-block;
-}
-.imageDownload h1{
-    display: inline-block;
-    color: var(--promo);
-    font-size: var(--fonts_titulo);
-    line-height: 3rem;
-    font-weight: 800;
-    margin-left: 7rem;
+    margin-left: 100px;
 }
 
 /* footer */
@@ -342,15 +335,18 @@ nav{
     text-align: center;
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1200px){
     .img3{
         left: 19.6rem;
     }
     .derecha  .descripcion {
         max-width: 32.5rem;
     }
-    .imageDownload h1{
-        margin-left: 2rem;
+    .component img{
+        display: none;
+    }
+    .mobile{
+        display: none;
     }
 }
 
@@ -364,6 +360,7 @@ nav{
     .navbar-light .navbar-toggler-icon{
         background-image: url(img/menu-line.svg) !important;
         outline: none;
+        color: #1B1C22;
     }
     .navbar-light button{
         border: 0;
@@ -448,20 +445,20 @@ nav{
         font-size: calc(var(--fonts_hero) - 0.9rem);
         line-height: 1.8rem;
     }
-    .left p, .right p{
+    .izquierda p, .derecha p{
         font-size: calc(var(--fonts_defecto) - 0.2rem);
         line-height: 1.3rem;
     }
-    .left .description  {
+    .izquierda .derecha  {
         margin-left: 0;
     }
-    .left .timestamp{
+    .izquierda .Fecha{
         margin-left: 0;
     }
-    .left h2{
+    .izquierda h2{
         margin-left: 0;
     }
-    .left a{
+    .izquierda a{
         margin-left: 0;
         margin-bottom: 3rem;
     }
@@ -469,7 +466,7 @@ nav{
     /* download */
     #download{
         margin-top: 8rem;
-        height: 45rem;
+        height: 30rem;
     }
     .component img{
         display: none;
@@ -486,17 +483,10 @@ nav{
         font-size: calc(var(--fonts_defecto) - 0.2rem);
         line-height: 1.3rem;
     }
-    .mockup{
+    .mobile{
         max-width: 9rem;
         padding-left: 1rem;
         margin-top: -2rem;
-    }
-    .imageDownload h1{
-        font-size: calc(var(--fonts_hero) - 0.4rem);
-        line-height: 2rem;
-        padding-right: 1rem;
-        margin-left: 1rem;
-        color: var(--navbar_menu);
     }
 
     /* footer */
@@ -505,11 +495,11 @@ nav{
         margin-top: 6rem;
         text-align: center;
     }
-    .credit p, .support p, .about p{
+    .creditos p, .soporte p, .acerca p{
         font-size: calc(var(--fonts_defecto) - 0.2rem);
         line-height: 1.3rem;
     }
-    .support, .about{
+    .soporte, .acerca{
         display: inline-block;
     }
 }
