@@ -1,55 +1,70 @@
-*{
+$primary-color: #938071;
+$secondary-color: #AFA798;
+$terciary-color: #1B1C22;
+$font-color: #aaa;
+
+@mixin reset{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.header-logo img{
-    width: 4rem;
-    float: left;
-    padding: 3px;
-}
-.header-logo a{
+@mixin formularioA {
+    color: $primary-color;
     text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
 }
-.header-logo a p{
-    padding-top: 20px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    color: #938071;
-    font-size: 20px;
-    text-decoration: none;
-    
+
+*{
+    @include reset
+}
+.header-logo{
+    & img {
+        width: 4rem;
+        float: left;
+        padding: 3px;
+    }
+    & a{
+        text-align: center;
+        & p{
+            padding-top: 20px;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            color: $primary-color;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
 }
 section{
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-}
-section .img{
-    position: relative;
-    width: 50%;
-    height: 100%;
-}
-section .img::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background: linear-gradient(225deg,#AFA798,#FAFAFA);*/
-    z-index: 1;
-    mix-blend-mode: screen;
-}
-section .img img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    & .img{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        mix-blend-mode: screen;
+        }
+        & img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+    }
 }
 
 /**------------section formulario------------------**/
@@ -63,12 +78,12 @@ section .contenido{
 }
 
 .formulario h1{
-    color: #AFA798;
+    color: $secondary-color;
     font-weight: 600;
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: 4px solid #1B1C22;
+    border-bottom: 4px solid $terciary-color;
     display: inline-block;
     letter-spacing: 1px; 
 }
@@ -89,7 +104,7 @@ section .contenido{
     padding: 10px 20px;
     outline: none;
     font-weight: 400;
-    border: 1px solid #938071;
+    border: 1px solid $primary-color;
     font-size: 16px;
     letter-spacing: 1px;
     color: #938071;
@@ -101,7 +116,7 @@ section .contenido{
     padding: 10px 30px;
     outline: none;
     font-weight: 400;
-    border: 1px solid #938071;
+    border: 1px solid $primary-color;
     font-size: 16px;
     letter-spacing: 1px;
     color: #938071;
@@ -110,7 +125,7 @@ section .contenido{
     text-align: center;
 }
 .formulario .input .submit{
-    background: #938071;
+    background: $primary-color;
     color: #fafafa;
     outline: none;
     border: none;
@@ -122,23 +137,23 @@ section .contenido{
 }
 .formulario .input .recordame{
     margin-bottom: 10px;
-    color: #938071;
+    color: $primary-color;
     font-weight: 400;
     font-size: 14px;
 }
-.formulario a{
-    color: #938071;
+
+.formulario{
+    & a{
+        color: $primary-color;
+    }
+    & p{
+        padding-top: 10px; 
+    }
+    & h3{
+        @include formularioA
+    }
 }
 
-.formulario p{
-    padding-top: 10px;
-}
-.formulario h3{
-    color: #938071;
-    text-align: center;
-    margin: 80px 0 10px;
-    font-weight: 500;
-}
 .formulario .social{
     display: flex;
     justify-content: center;
@@ -154,18 +169,20 @@ section .contenido{
     margin: 0 7px;
     cursor: pointer;
 }
-.formulario .creditos p{
-    color: #938071;
-    text-align: center;
-    margin: 80px 0 10px;
-    font-weight: 500;
+.formulario{
+    &.creditos{
+        & p{
+            @include formularioA
+        }
+    }
 }
-.formulario .copyright{
-    color: #938071;
-    text-align: center;
-    margin: 80px 0 10px;
-    font-weight: 500;
+
+.formulario{
+    &.copyright{
+        @include formularioA()
+    }
 }
+
 
 /**------------responsive------------------**/
 @media (max-width: 768px){
