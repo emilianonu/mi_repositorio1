@@ -239,6 +239,12 @@ body{
 .btn-menu{
     display: none;
 }
+@media (max-width: 943px){
+    .main-posts{
+        display: grid;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 775px){
     .about .caja{
@@ -254,6 +260,10 @@ body{
     }
     .btn .btn-text{
         display: none;
+    }
+    .main-posts{
+        display: grid;
+        justify-content: center;
     }
     
 
@@ -341,6 +351,10 @@ body{
         cursor: pointer;
         margin: 0 10px;
         display: inline-block;
+    }
+    .main-posts{
+        display: grid;
+        justify-content: center;
     }
     .main-posts .post-info img{
         display: grid;
